@@ -36,6 +36,10 @@ if ($uploadOk == 0) {
         //record the file name in txt file
         $txt = fopen(getcwd() . "/fileName.txt", "w");
         fwrite($txt, $fileName);
+      
+      //Exec java in shell
+//         $command = "java -jar out/artifacts/JavaFile/JavaPdfTxt.jar";
+//         echo shell_exec($command);
         
 
     } else {
